@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BpOIOiJCNmIE0+zqrQA7YqAdCvdgBYu5ku7dq/2g0JAS4v55SndOPOgQke1J6m2bW62pvxqgELfaUXywKDADVw==",
+  "success": true,
+  "projectFilePath": "/Users/adahadaenobong/Projects/zispad/zispad.iOS/zispad.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/adahadaenobong/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/adahadaenobong/.nuget/packages/xamarin.forms/4.6.0.800/xamarin.forms.4.6.0.800.nupkg.sha512"
+  ],
+  "logs": []
+}

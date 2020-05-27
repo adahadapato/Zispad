@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White"
+             x:Class="zispad.Pages.LoginPage">
+    <StackLayout>
+        <!-- Logo -->
+        <StackLayout Spacing="0" >
+            <Image Aspect="AspectFill"
+                Source="HeaderBackground.png" />
+            <Image Source="CurvedMask.png"
+                   Aspect="Fill"
+                   Margin="0, -40, 0, -40"
+                   VerticalOptions="End"/>
+            <!--<Label
+                FontAttributes="Bold"
+                FontSize="34"
+                HorizontalTextAlignment="Center"
+                Text="ZISPAD"
+                TextColor="#46B515"/>-->
+        </StackLayout>
+
+        <!-- Data -->
+        <StackLayout
+            Padding="10"
+            VerticalOptions="EndAndExpand">
+            <Frame
+                BackgroundColor="White"
+                BorderColor="Silver"
+                CornerRadius="5"
+                HasShadow="True"
+                Margin="15">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Email Address -->
+                    <Image
+                        Aspect="AspectFit"
+                        HeightRequest="20"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="email.png"
+                        WidthRequest="20"
+                        VerticalOptions="CenterAndExpand"/>
+                    <Entry
+                        Grid.Column="1"
+                        Placeholder="Email Address"
+                        Keyboard="Email"
+                        TextColor="Black"/>
+
+                    <!-- Separator -->
+                    <BoxView
+                        BackgroundColor="Silver"
+                        HeightRequest="1"
+                        Grid.Column="1"
+                        Grid.Row="1"/>
+
+                    <!-- Password -->
+                    <Image
+                        Aspect="AspectFit"
+                        HeightRequest="20"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.Row="2"
+                        Source="password.png"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="20"/>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        IsPassword="True"
+                        Placeholder="Password"
+                        TextColor="Black"/>
+                </Grid>
+            </Frame>
+
+            <!-- Forgot Password -->
+            <Label
+                FontSize="12"
+                HorizontalTextAlignment="Center"
+                Margin="0,0,0,15"
+                Text="Forgot Password?"
+                TextColor="#0052FF">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+
+            <!-- Buttons -->
+            <Grid
+                Margin="0,0,0,15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!-- Facebook -->
+                <Frame
+                    BackgroundColor="#3B5998"
+                    
+                    CornerRadius="5"
+                    Padding="10">
+                    <Image
+                        Aspect="AspectFit"
+                        HeightRequest="25"
+                        HorizontalOptions="Center"
+                        Source="facebook.png"
+                        VerticalOptions="Center"
+                        WidthRequest="25"/>
+                </Frame>
+
+                <!-- Login -->
+                <Button
+                    BackgroundColor="#46B515"
+                    CornerRadius="5"
+                    FontAttributes="Bold"
+                    FontSize="14"
+                    Grid.Column="2"
+                    Text="LOGIN"
+                    TextColor="White"/>
+            </Grid>
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="CenterAndExpand">
+                <Label
+                    FontSize="12"
+                    Text="By signing up, you agree with our"
+                    TextColor="Black"/>
+
+                <Label
+                    FontSize="12"
+                    Text="Terms and Conditions"
+                    TextColor="Blue"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>

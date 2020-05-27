@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{5F98B35F-5B86-4FFF-BA97-DCE20EE958C8}|Default">
+  <MonoDevelop.Ide.ItemProperties.zispad.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.69889B24-E0C9-4C17-88BC-CC3EC90C9359" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="zispad/Pages/LoginPage.xaml">
+    <Files>
+      <File FileName="zispad/Pages/HomePage.xaml" Line="6" Column="11" />
+      <File FileName="zispad/Pages/HomePage.xaml.cs" Line="81" Column="10" />
+      <File FileName="zispad/Pages/LoginPage.xaml" Line="22" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="zispad" expanded="True">
+            <Node name="zispad" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="LoginPage.xaml" expanded="True" selected="True" />
+                <Node name="Payment.xaml" expanded="True" />
+                <Node name="Settings.xaml" expanded="True" />
+                <Node name="Trips.xaml" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.zispad.Android PreferredExecutionTarget="Android.zaraph" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
